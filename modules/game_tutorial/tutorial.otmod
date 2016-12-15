@@ -1,0 +1,10 @@
+Module
+  name: game_tutorial
+  description: Game tutorial
+  author: Garep
+  sandboxed: true
+  scripts: [configs, tutorial]
+  autoload: true
+  autoload-priority: 1001
+  @onLoad: init()
+  @onUnload: terminate()

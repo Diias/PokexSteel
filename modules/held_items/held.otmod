@@ -1,0 +1,15 @@
+Module
+  name: held_items
+  description: Some held functionalities
+  author: Eu
+  website: http://www.google.com.br
+
+  autoload: true
+  autoload-priority: 1000
+
+  @onLoad: |
+    dofile 'held'
+    Held.init()
+
+  @onUnload: |
+    Held.terminate()

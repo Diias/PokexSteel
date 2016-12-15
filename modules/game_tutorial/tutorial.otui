@@ -1,0 +1,81 @@
+TutorialLabel < Label
+  font: verdana-11px-monochrome
+  text-offset: 2 0
+  focusable: true
+  background-color: alpha
+  
+  $focus:
+    background-color: #444444
+
+  $on focus:
+    color: #00ff00
+  $!on focus:
+    color: #ffffff
+
+MainWindow
+  size: 945 523
+  padding: 0
+  @onEscape: modules.game_tutorial.onClickTutorial()
+
+  TextList
+    id: indexList
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.bottom: parent.bottom
+    margin-left: 11
+    margin-top: 30
+    margin-bottom: 15
+    focusable: true
+    size: 271 271
+    vertical-scrollbar: indexScroll
+
+  ScrollablePanel
+    id: scrollablePainel
+    anchors.bottom: parent.bottom
+    anchors.right: parent.right
+    margin-right: 71
+    margin-bottom: 32
+    size: 547 455
+    background-color: #201f1f
+    vertical-scrollbar: textScroll
+    padding: 5
+
+    Label
+      id: tutorialText
+      text-wrap: true
+      text-auto-resize:true
+      anchors.right: parent.right
+      anchors.top: parent.top
+      anchors.left: parent.left
+      margin-right: 15
+
+  VerticalScrollBar
+    id: textScroll
+    anchors.bottom: parent.bottom
+    anchors.right: parent.right
+    margin-bottom: 28
+    margin-right: 27
+    height: 449
+
+  VerticalScrollBar
+    id: indexScroll
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.bottom: parent.bottom
+    margin-top: 25
+    margin-bottom: 25
+    margin-left: 282
+    height: 189
+
+  UIButton
+    id: cancelButton
+    image-source: imgs/exit
+    size: 16 16
+    anchors.right: parent.right
+    anchors.top: parent.top
+    margin-top: 3
+    margin-right: 5
+    @onClick: onClickTutorial()
+
+    $hover:
+      image-source: imgs/exit1

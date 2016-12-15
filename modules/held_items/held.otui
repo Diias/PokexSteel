@@ -1,0 +1,268 @@
+MainWindow
+  id: optionsWindow
+  text: Helds
+  size: 280 280
+  
+  UIButton
+    id: Devoted
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 40
+    height: 40
+    image-source: /images/ui/held/devoted
+    margin-left: -20
+    margin-top: -10
+
+  Label
+    !text: tr('20 Devoted Tokens (Tier 1-2)')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-left: 14
+    margin-top: 3
+
+  Button
+    id: DevotedButton
+    !text: tr('Change')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 60
+    height: 20
+    margin-left: 197
+    margin-top: 0
+    @onClick: g_game.talk('#devoted#')
+
+  UIButton
+    id: Mighty1
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 40
+    height: 40
+    image-source: /images/ui/held/mighty
+    margin-left: -20
+    margin-top: 20
+
+  Label
+    !text: tr('50 Mighty Tokens (Tier 1-3)')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-left: 14
+    margin-top: 33
+
+  Button
+    id: Mighty1Button
+    !text: tr('Change')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 60
+    height: 20
+    margin-left: 197
+    margin-top: 30
+    @onClick: g_game.talk('#mighty1#')
+
+  UIButton
+    id: Mighty2
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 40
+    height: 40
+    image-source: /images/ui/held/mighty
+    margin-left: -20
+    margin-top: 50
+
+  Label
+    !text: tr('100 Mighty Tokens (Tier 2-4)')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-left: 14
+    margin-top: 63
+
+  Button
+    id: Mighty2Button
+    !text: tr('Change')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 60
+    height: 20
+    margin-left: 197
+    margin-top: 60
+    @onClick: g_game.talk('#mighty2#')
+
+  UIButton
+    id: Mighty3
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 40
+    height: 40
+    image-source: /images/ui/held/mighty
+    margin-left: -20
+    margin-top: 80
+
+  Label
+    !text: tr('200 Mighty Tokens (Tier 3-6)')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-left: 14
+    margin-top: 93
+
+  Button
+    id: Mighty3Button
+    !text: tr('Change')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 60
+    height: 20
+    margin-left: 197
+    margin-top: 90
+    @onClick: g_game.talk('#mighty3#')
+
+  UIButton
+    id: Honored1
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 40
+    height: 40
+    image-source: /images/ui/held/honored
+    margin-left: -20
+    margin-top: 110
+
+  Label
+    !text: tr('25 Honored Tokens (Tier 1-3)')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-left: 14
+    margin-top: 123
+
+  Button
+    id: Honored1Button
+    !text: tr('Change')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 60
+    height: 20
+    margin-left: 197
+    margin-top: 120
+    @onClick: g_game.talk('#honored1#')
+
+  UIButton
+    id: Honored2
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 40
+    height: 40
+    image-source: /images/ui/held/honored
+    margin-left: -20
+    margin-top: 140
+
+  Label
+    !text: tr('50 Honored Tokens (Tier 2-4)')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-left: 14
+    margin-top: 153
+
+  Button
+    id: Honored2Button
+    !text: tr('Change')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 60
+    height: 20
+    margin-left: 197
+    margin-top: 150
+    @onClick: g_game.talk('#honored2#')
+
+  UIButton
+    id: Honored3
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 40
+    height: 40
+    image-source: /images/ui/held/honored
+    margin-left: -20
+    margin-top: 170
+
+  Label
+    !text: tr('100 Honored Tokens (Tier 3-6)')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-left: 14
+    margin-top: 183
+
+  Button
+    id: Honored3Button
+    !text: tr('Change')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 60
+    height: 20
+    margin-left: 197
+    margin-top: 180
+    @onClick: g_game.talk('#honored3#')
+
+  UIButton
+    id: PlayerDevoted
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 40
+    height: 40
+    image-source: /images/ui/held/devoted
+    margin-left: -20
+    margin-top: 213
+
+  Label
+    id: playerCount
+    !text: tr('----')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-left: 14
+    margin-top: 226
+
+  UIButton
+    id: PlayerMighty
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 40
+    height: 40
+    image-source: /images/ui/held/mighty
+    margin-left: 40
+    margin-top: 213
+
+  Label
+    id: playerCount2
+    !text: tr('----')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-left: 74
+    margin-top: 226
+
+  UIButton
+    id: PlayerHonored
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 40
+    height: 40
+    image-source: /images/ui/held/honored
+    margin-left: 100
+    margin-top: 213
+
+  Label
+    id: playerCount3
+    !text: tr('----')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-left: 134
+    margin-top: 226
+
+  Button
+    id: CloseButton
+    !text: tr('Close')
+    anchors.top: parent.top
+    anchors.left: parent.left
+    width: 60
+    height: 20
+    margin-left: 197
+    margin-top: 220
+    @onClick: Held.hide()
+
+  @onEnter: Held.hide()
+  @onEscape: Held.hide()
